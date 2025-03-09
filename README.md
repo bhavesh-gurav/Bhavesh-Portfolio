@@ -10,7 +10,6 @@
 4.  [Packages Used](#packages-used)
 5.  [Getting started](#getting-started)
 6.  [Project Structure](#project-structure)
-7.  [Author](#author)
 
 ## Demo
 
