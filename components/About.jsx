@@ -62,7 +62,7 @@ function About() {
             </Link>
           ))}
         </div>
-        <Link
+        {/* <Link
           href="document/Bhavesh_Gurav_Resume.pdf"
           target="_blank"
           rel="noreferrer"
@@ -81,7 +81,7 @@ function About() {
               <span>e</span>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </motion.div>
     </section>
   );
