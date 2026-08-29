@@ -23,12 +23,20 @@ function Hero({ loading, isMobile }) {
           initial="hidden"
           whileInView={!loading && "show"}
           viewport={{ once: true, amount: 0.25 }}
+          className="max-w-3xl"
         >
+          <div className="mb-5 flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-slate-300/80">
+            <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.9)]" />
+            software developer / full stack engineer
+          </div>
           <h1 className={`heroHeadText`}>
             Hi, I&apos;m{" "}
-            <span className="dark:text-five text-primary">Bhavesh</span>
+            <span className="bg-gradient-to-r from-cyan-300 via-blue-200 to-violet-200 bg-clip-text text-transparent">Bhavesh</span>
           </h1>
-          <p className={`heroSubText mt-2 tracking-wide`}>
+          <p className="mt-3 text-sm sm:text-base text-slate-300/80 font-medium tracking-[0.18em] uppercase">
+            I build scalable products, clean APIs, and user experiences that solve real problems.
+          </p>
+          <p className={`heroSubText mt-4 tracking-wide`}>
             <TypeAnimation
               sequence={heroTexts}
               // preRenderFirstString={true}
@@ -37,6 +45,29 @@ function Hero({ loading, isMobile }) {
               repeat={Infinity}
             />
           </p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {['C#', 'ASP.NET Core', 'React', 'Node.js', 'SQL', 'TypeScript'].map((item) => (
+              <span
+                key={item}
+                className="code-pill"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-8 grid max-w-xl gap-3 sm:grid-cols-3">
+            {[
+              { label: 'Experience', value: '3+ yrs' },
+              { label: 'Focus', value: 'Full Stack' },
+              { label: 'Stack', value: '.NET / React' },
+            ].map((stat) => (
+              <div key={stat.label} className="premium-stat">
+                <span className="text-[10px] uppercase tracking-[0.22em] text-slate-400">{stat.label}</span>
+                <strong className="mt-2 block text-lg font-semibold text-white">{stat.value}</strong>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
       <motion.div

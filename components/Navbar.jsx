@@ -49,44 +49,41 @@ function Navbar() {
 	return (
 		<>
 			<nav
-				className={`paddingX w-full flex items-center py-5 fixed top-0 z-30 bg-transparent backdrop-filter backdrop-blur-xl bg-opacity-60`}
+				className={`paddingX w-full flex items-center py-5 fixed top-0 z-30`}
 			>
 				{avatarToggle && <AvatarModal />}
-				<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-					<div href="/" className="flex items-center gap-6">
+				<div className="w-full flex justify-between items-center max-w-7xl mx-auto rounded-full border border-white/10 bg-slate-950/40 px-4 py-3 shadow-[0_0_35px_rgba(14,165,233,0.12)] backdrop-blur-xl">
+					<div href="/" className="flex items-center gap-4">
 						<div
-							className="w-9 h-9 object-contain
-                        rounded-full relative cursor-pointer"
+							className="w-10 h-10 object-contain rounded-full relative cursor-pointer ring-2 ring-cyan-400/50 ring-offset-2 ring-offset-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.4)]"
 						>
 							<Image
 								src="/assets/avatar.png"
 								alt="avatar"
 								fill={true}
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
-								className="w-9 h-9 object-cover
-                        rounded-full"
+								className="w-10 h-10 object-cover rounded-full"
 								onClick={() => setAvatarToggle(!avatarToggle)}
 							/>
 						</div>
 						<Link href="/">
-							<p className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[18px] font-bold cursor-pointer flex ">
-								Bhavesh Gurav&nbsp;
-								<span className="lg:block hidden">
-									{" "}
-									| Full Stack Developer
+							<p className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[16px] sm:text-[18px] font-bold cursor-pointer flex items-center">
+								<span className="bg-gradient-to-r from-cyan-300 via-blue-200 to-violet-300 bg-clip-text text-transparent">Bhavesh Gurav</span>
+								<span className="lg:block hidden text-[11px] sm:text-[12px] uppercase tracking-[0.25em] text-slate-300/70 ml-4">
+									Full Stack Developer
 								</span>
 							</p>
 						</Link>
 					</div>
 
-					<ul className="list-none hidden md:flex flex-row gap-10 items-center">
+					<ul className="list-none hidden md:flex flex-row gap-8 items-center">
 						{navLinks.map((nav) => (
 							<li
 								key={nav.id}
-								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight border-secondary transition-all duration-200 ease-in text-[18px] font-medium cursor-pointer ${
+								className={`dark:text-ctnPrimaryDark text-ctnPrimaryLight transition-all duration-200 ease-in text-[15px] font-medium cursor-pointer ${
 									active === nav.title
-										? "text-quaternary dark:text-quaternary border-b-2 border-quaternary"
-										: "hover:text-tertiary hover:dark:text-tertiary hover:border-y-2"
+										? "text-cyan-300"
+										: "hover:text-cyan-300 text-slate-300"
 								}`}
 								onClick={() => setActive(nav.title)}
 							>

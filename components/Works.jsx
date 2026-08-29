@@ -30,7 +30,7 @@ function ProjectCard({
       <Tilt
         tiltMaxAngleX="10"
         tiltMaxAngleY="10"
-        className="dark:bg-bgSecondaryDark bg-bgSecondaryLight p-5 rounded-2xl sm:w-[370px] w-full h-fit min-h-[590px] shadow-sm shadow-primary"
+        className="premium-project-card p-5 rounded-2xl sm:w-[370px] w-full h-fit min-h-[590px]"
       >
         <div className="relative w-full h-[230px]">
           <div className="w-full h-full object-cover rounded-2xl relative">

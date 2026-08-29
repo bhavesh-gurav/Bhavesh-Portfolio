@@ -10,7 +10,7 @@ function ServiceCard({ index, title, icon }) {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="premium-card w-full rounded-[22px] p-[1px]"
       >
         <div
           options={{
@@ -18,9 +18,9 @@ function ServiceCard({ index, title, icon }) {
             scale: 1,
             speed: 450,
           }}
-          className="dark:bg-bgSecondaryDark bg-bgSecondaryLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="dark:bg-slate-950/80 bg-white/10 rounded-[22px] py-6 px-6 min-h-[250px] flex justify-evenly items-center flex-col"
         >
-          <div className="w-16 h-16 object-contain relative">{icon}</div>
+          <div className="w-16 h-16 object-contain relative flex items-center justify-center rounded-2xl border border-cyan-400/30 bg-slate-900/70 text-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.2)]">{icon}</div>
           <h3 className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[20px] font-bold text-center w-[80%]">
             {title}
           </h3>

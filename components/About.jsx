@@ -28,16 +28,11 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Bhavesh Gurav, a passionate web developer and problem 
-          solver. Currently, I work as a Software Developer L1 at Rysun Labs Pvt Ltd. 
-          I&apos;m pursuing a Master&apos;s degree in Computer Applications at IMRD College in Shirpur, 
-          India, with an expected graduation year of 2022. I have experience in C#, JavaScript, 
-          Tailwind CSS, and TypeScript. I specialize in frameworks such as ASP.NET Core and MVC, Angular, React, 
-          React-Three-Fiber, and Three.js. I can handle databases such as SQL Server, MySQL, and PostgreSQL. 
-          Additionally, my knowledge of fundamental data structures and algorithms 
-          makes me well-versed in full-stack web development.
+          Hello! I&apos;m Bhavesh Gurav, a software developer and problem solver focused on building clean, scalable web experiences. I currently work as a Software Developer L1 at Rysun Labs Pvt Ltd, and I&apos;m pursuing my Master&apos;s degree in Computer Applications at IMRD College in Shirpur, India, with an expected graduation year of 2022.
           <br className="sm:block hidden" />
-          Let&apos;s collaborate to bring your ideas to life!
+          My work spans C#, JavaScript, TypeScript, and Tailwind CSS, with strong hands-on experience in ASP.NET Core, ASP.NET MVC, Angular, React, React-Three-Fiber, and Three.js. I also work comfortably with SQL Server, MySQL, and PostgreSQL, and I use fundamental data structures and algorithms to build reliable full-stack solutions.
+          <br className="sm:block hidden" />
+          I enjoy turning ideas into practical products and collaborating with teams to ship impactful software.
         </div>
         <div className="w-fit break-words">
           <Link
